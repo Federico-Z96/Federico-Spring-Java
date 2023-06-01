@@ -1,5 +1,6 @@
 package com.example.springboot;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,11 @@ public class HelloController {
 
 	@GetMapping("/greeting")
 	public ResponseEntity<String> greeting() {
-		return ResponseEntity.ok("200 Ok");
+		return new ResponseEntity<>("200 Ok", HttpStatus.OK);
 	}
 
 }
+
+
+
+
