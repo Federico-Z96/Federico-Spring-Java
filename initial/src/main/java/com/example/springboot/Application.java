@@ -1,6 +1,4 @@
-package com.example.springboot.es1;
-
-import java.util.Arrays;
+package com.example.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,11 +12,7 @@ public class Application {
 
 		System.out.println("Let's inspect the beans provided by Spring Boot:");
 
-		String[] beanNames = ctx.getBeanDefinitionNames();
-		Arrays.sort(beanNames);
-		for (String beanName : beanNames) {
-			System.out.println(beanName);
-		}
+
 	}
 	
 }
