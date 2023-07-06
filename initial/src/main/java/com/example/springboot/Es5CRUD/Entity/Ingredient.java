@@ -1,18 +1,14 @@
 package com.example.springboot.Es5CRUD.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
-@Table
-@Entity
+import jakarta.persistence.*;
 
+@Entity
+@Table
 public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-   private String name;
+    private String name;
     private Double price;
     private String description;
 
@@ -22,6 +18,7 @@ public class Ingredient {
         this.description = description;
         this.id = id;
     }
+    public Ingredient(){}
 
     public String getName() {
         return name;

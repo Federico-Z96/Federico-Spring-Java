@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ServiceIngredtient {
+public class ServiceIngredient {
     @Autowired
     private RepositoryIngrediente repositoryIngredient;
     public ResponseEntity<?> createingredient (Ingredient ingredient) {
